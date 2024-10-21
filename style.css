@@ -102,3 +102,8 @@ body{
 .header-center ul li:hover a{
     background: #dddddd;
 }
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
