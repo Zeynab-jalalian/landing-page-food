@@ -72,11 +72,6 @@ body{
     align-items: center;
     padding: 30px;
 }
-.header-left{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .header-right a{
  border: 1px solid #474747;
  color: #353535;
@@ -84,12 +79,26 @@ body{
  padding: 10px 12px;
  font-weight: bolder;
 }
+.header-right a:hover{
+ background: rgb(202, 7, 7);
+ color: white;
+ border: none;
+}
 .header-center ul{
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
 }
-.header-center ul li{
-    margin: 0 10px;
+.header-center ul li a{
+    margin: 0 15px;
+    color: #353535;
+    padding: 10px 13px;
+    border-radius: 20px;
+}
+.header-center ul li .active{
+    background: #dddddd;
+}
+.header-center ul li:hover a{
+    background: #dddddd;
 }
