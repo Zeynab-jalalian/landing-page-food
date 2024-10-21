@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 .top-header{
     background: #474747;
     width: 100%;
@@ -11,7 +14,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 25px;
+    padding: 25px 0;
 }
 .icons{
     display: flex;
@@ -30,4 +33,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.information div a{
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255,0.9);
+}
+.information div p{
+    font-size: 13px;
+}
+.information div span{
+    margin: 0 5px;
+    font-size: 16px;
+}
+.information div:hover p{
+    text-decoration:underline;
 }
