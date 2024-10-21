@@ -84,3 +84,12 @@ body{
  padding: 10px 12px;
  font-weight: bolder;
 }
+.header-center ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.header-center ul li{
+    margin: 0 10px;
+}
