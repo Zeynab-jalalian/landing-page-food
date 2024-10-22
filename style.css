@@ -18,7 +18,8 @@ body {
   font-variation-settings:
     "wdth" 100;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .top-header {
@@ -106,7 +107,7 @@ body {
     background: rgb(202, 7, 7);
     color: white;
     border: none;
-    font-weight: 400;
+    padding:11px 13px;
 }
 
 .header-center ul {
