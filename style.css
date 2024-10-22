@@ -174,7 +174,7 @@ body {
     font-weight: bolder;
 }
 .content .btns .book:hover{
-    background: white;
+    background: transparent;
     color: #353535;
     border: 1px solid #474747;
     padding: 9px 11px;
