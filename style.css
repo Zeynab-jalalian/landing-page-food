@@ -153,6 +153,7 @@ body {
     line-height: 25px;
     margin-bottom: 20px;
     font-size: 16px;
+    color: #515151;
 }
 .content .btns .book {
     background: rgb(202, 7, 7);
@@ -171,4 +172,16 @@ body {
     border-radius: 20px;
     padding: 10px 12px;
     font-weight: bolder;
+}
+.content .btns .book:hover{
+    background: white;
+    color: #353535;
+    border: 1px solid #474747;
+    padding: 9px 11px;
+}
+.content .btns .more:hover{
+    background: rgb(202, 7, 7);
+    color: white;
+    border: none;
+    padding: 11px 13px;
 }
