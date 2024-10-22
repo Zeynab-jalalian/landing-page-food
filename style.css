@@ -21,7 +21,9 @@ body {
     height: 100vh;
     overflow: hidden;
 }
-
+#menu{
+    display: none;
+}
 .top-header {
     background: #474747;
     width: 100%;
@@ -194,4 +196,62 @@ body {
     color: white;
     border: none;
     padding: 11px 13px;
+}
+@media (max-width:850px){
+    .header{
+        padding: 10px;
+    }
+    .header-right a{
+        font-size: 12px;
+        padding:10px 12px;
+    }
+    .header-center ul li a{
+        font-size: 15px;
+    }
+    .content h1{
+        font-size: 38px;
+    }
+    .content p{
+        font-size: 13px;
+    }
+    .content .btns a{
+        font-size: 13px;
+    }
+}
+@media (max-width:741px){
+ .header-right a{
+    display: none;
+ }
+ .header-left img{
+    display: none;
+ }
+ .information div p{
+ font-size: 11px;
+ }
+ .icons a span{
+    width: 25px;
+    height: 25px;
+ }
+}
+@media (max-width:550px){
+    .content h1{
+        font-size: 34px;
+    }
+}
+@media (max-width:510px){
+    .header-center ul{
+        display: none;
+    }
+    .header{
+        height: 50px;
+        background:lightslategray;
+        justify-content: end;
+        padding: 20px;
+    }
+    #menu{
+        display: block;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+    }
 }
