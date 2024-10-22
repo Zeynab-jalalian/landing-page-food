@@ -9,7 +9,14 @@ a {
 }
 
 body {
-    background: pink;
+    background: url('landing.jpg') no-repeat;
+    background-position:  center;
+    background-size: cover;
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 .top-header {
