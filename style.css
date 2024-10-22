@@ -199,6 +199,9 @@ body {
 #menu{
     display: none;
 }
+#exit{
+    display: none;
+}
 @media (max-width:850px){
     .header{
         padding: 10px;
@@ -246,13 +249,16 @@ body {
       bottom: -100%;
       left: 0;
       display: block;
-      background: gray;
+      background: rgba(0,0,0,0.9);
       width: 100%;
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+    }
+    .header-center ul li a{
+        color: white;
     }
     .header-center ul li .active{
         background: none;
@@ -271,17 +277,29 @@ body {
     .header-center ul li:hover{
         background: #dddddd;
     }
+    .header-center ul li:hover a{
+        color: #000;
+    }
     .header{
         height: 50px;
         background:lightslategray;
         justify-content: end;
         padding: 20px;
     }
-    #menu{
+    #menu , #exit{
         display: block;
         color: #fff;
         font-size: 30px;
         cursor: pointer;
+        transition: 0.2s;
+    }
+    #menu{
+        position: relative;
+        top: 15px;
+    }
+    #exit{
+        opacity: 0;
+        pointer-events: none;
     }
     .ul{
         transition: 0.5s;
@@ -289,4 +307,68 @@ body {
     #check:checked~ .ul{
        bottom: -100px;
     }
+    #check:checked~ label #exit{
+        opacity: 1;
+        pointer-events: auto;
+        position: relative;
+        top: -15px;
+    }
+    #check:checked~ label #menu{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+@media (max-width:460px){
+    .main{
+        padding: 30px;
+    }
+    .top-header .information div p{
+        display: none;
+    }
+    .information div span:hover{
+        color: rgb(0, 255, 242);
+    }
+    .content h1{
+        font-size: 28px;
+    }
+    .content p{
+        font-size: 11px;
+    }
+}
+@media (max-width:330px){
+    .main{
+        padding: 30px;
+    }
+    .top-header{
+        display: none;
+    }
+    #check:checked~ .ul{
+        bottom: -50px;
+     }
+    .btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .btns a{
+        margin: 20px 0;
+        font-size: 11px;
+    }
+}
+@media (max-width:279px){
+    .content h1{
+        font-size: 24px;
+    }
+    .content p{
+        font-size: 10px;
+    }
+}
+@media (max-width:250px){
+    .content h1{
+        font-size: 20px;
+    }
+    .content p{
+      display: none;
+    } 
 }
