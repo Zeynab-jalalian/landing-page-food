@@ -1,5 +1,5 @@
 # Landing page food
-#### ![Languages]() :
+#### ![Languages](https://img.shields.io/github/languages/count/zeynab-jalalian/landing-page-food) :
  - ![HTML](https://img.shields.io/badge/html-orange)
  - ![CSS](https://img.shields.io/badge/css-blue)
    ---
